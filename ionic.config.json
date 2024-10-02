@@ -1,0 +1,7 @@
+{
+  "name": "Serenity Sounds",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
