@@ -1,0 +1,20 @@
+.sound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: #ffb997; /* Colore per l'icona attiva */
+  border-radius: 8px; /* Aggiungi un bordo arrotondato se necessario */
+  transition: background-color 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
+}
+
+img {
+  filter: brightness(1); /* Colore per l'icona attiva */
+}
+
+.active img {
+  filter: brightness(0) invert(1); /* Cambia il colore dell'icona se necessario */
+}

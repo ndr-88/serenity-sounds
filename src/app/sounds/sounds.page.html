@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="toolbar-left ">
+      <img src="assets/logo.svg" alt="Logo" class="logo" [height]="50" />
+    </div>
+    <!-- ion-title può essere rimosso se non necessario -->
+    <!-- <ion-title>Sounds</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="main-grid">
+    <app-sound-element
+      *ngFor="let sound of data; let i = index"
+      [iconPath]="sound.iconPath"
+      [text]="sound.text"
+      (click)="playElement(sound, i)"
+    >
+    </app-sound-element>
+  </div>
+</ion-content>

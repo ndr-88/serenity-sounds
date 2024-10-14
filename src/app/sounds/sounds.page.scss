@@ -1,0 +1,20 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  padding: 20px 0;
+}
+
+ion-header {
+  background-color: #3388b0 !important;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px; /* Regola l'altezza del logo */
+  margin-left: 10px; /* Aggiungi un po' di margine se necessario */
+}
